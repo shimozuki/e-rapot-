@@ -102,7 +102,7 @@
         @if(Session::get('kurikulum') == '2013')
 
         <!-- Kurikulum 2013 -->
-        <li class="nav-header">SETTING RAPORT K-2013</li>
+        {{-- <li class="nav-header">SETTING RAPORT K-2013</li>
         <li class="nav-item">
           <a href="{{ route('k13mapping.index') }}" class="nav-link">
             <i class="nav-icon fas fa-list-ol"></i>
@@ -160,7 +160,7 @@
               Validasi Data
             </p>
           </a>
-        </li>
+        </li> --}}
 
         <li class="nav-header">HASIL RAPORT K-2013</li>
         <li class="nav-item has-treeview">
@@ -194,23 +194,23 @@
         </li>
 
 
-        <li class="nav-item">
+        {{-- <li class="nav-item">
           <a href="{{ route('rekapkehadiran.index') }}" class="nav-link">
             <i class="nav-icon fas fa-calendar-check"></i>
             <p>
               Rekap Kehadiran Siswa
             </p>
           </a>
-        </li>
+        </li> --}}
 
-        <li class="nav-item">
+        {{-- <li class="nav-item">
           <a href="{{ route('k13leger.index') }}" class="nav-link">
             <i class="nav-icon fas fa-table"></i>
             <p>
               Leger Nilai Siswa
             </p>
           </a>
-        </li>
+        </li> --}}
 
         <li class="nav-item has-treeview">
           <a href="#" class="nav-link">
