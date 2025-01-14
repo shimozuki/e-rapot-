@@ -24,15 +24,15 @@
 
         <!-- Kurikulum 2013 -->
         <li class="nav-header">RAPORT K-2013</li>
-        <li class="nav-item">
+        {{-- <li class="nav-item">
           <a href="{{ route('kdk13.index') }}" class="nav-link">
             <i class="nav-icon fas fa-clipboard-list"></i>
             <p>
               Data Kompetensi Dasar
             </p>
           </a>
-        </li>
-        <li class="nav-item has-treeview">
+        </li> --}}
+        {{-- <li class="nav-item has-treeview">
           <a href="#" class="nav-link">
             <i class="nav-icon fas fa-list-alt"></i>
             <p>
@@ -72,7 +72,7 @@
               </a>
             </li>
           </ul>
-        </li>
+        </li> --}}
 
         <li class="nav-item has-treeview">
           <a href="#" class="nav-link">
