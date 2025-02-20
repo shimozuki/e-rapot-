@@ -8,4 +8,9 @@ use Chatify\Traits\UUID;
 class ChMessage extends Model
 {
     use UUID;
+
+    public static function total()
+    {
+        return self::count(); // Returns the total count of ChMessage records
+    }
 }
