@@ -84,7 +84,7 @@ class AuthController extends Controller
                     $cek_riwayat->update(['status_login' => true]);
                 }
                 session([
-                    'kurikulum' => 2006,
+                    'kurikulum' => 2013,
                     'tapel_id' => $request->tahun_pelajaran,
                 ]);
 
