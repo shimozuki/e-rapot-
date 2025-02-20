@@ -96,6 +96,13 @@
               </a>
             </li>
 
+            <li class="nav-item">
+              <a href="{{ route('chatify') }}" class="nav-link">
+                <i class="fas fa-comment-alt nav-icon"></i>
+                <p>Pesan</p>
+              </a>
+            </li>
+
           </ul>
         </li>
 
@@ -105,11 +112,11 @@
         {{-- <li class="nav-header">SETTING RAPORT K-2013</li>
         <li class="nav-item">
           <a href="{{ route('k13mapping.index') }}" class="nav-link">
-            <i class="nav-icon fas fa-list-ol"></i>
-            <p>
-              Mapping Mapel
-            </p>
-          </a>
+        <i class="nav-icon fas fa-list-ol"></i>
+        <p>
+          Mapping Mapel
+        </p>
+        </a>
         </li>
         <li class="nav-item">
           <a href="{{ route('k13kkm.index') }}" class="nav-link">
@@ -196,20 +203,20 @@
 
         {{-- <li class="nav-item">
           <a href="{{ route('rekapkehadiran.index') }}" class="nav-link">
-            <i class="nav-icon fas fa-calendar-check"></i>
-            <p>
-              Rekap Kehadiran Siswa
-            </p>
-          </a>
+        <i class="nav-icon fas fa-calendar-check"></i>
+        <p>
+          Rekap Kehadiran Siswa
+        </p>
+        </a>
         </li> --}}
 
         {{-- <li class="nav-item">
           <a href="{{ route('k13leger.index') }}" class="nav-link">
-            <i class="nav-icon fas fa-table"></i>
-            <p>
-              Leger Nilai Siswa
-            </p>
-          </a>
+        <i class="nav-icon fas fa-table"></i>
+        <p>
+          Leger Nilai Siswa
+        </p>
+        </a>
         </li> --}}
 
         <li class="nav-item has-treeview">
@@ -234,6 +241,12 @@
               </a>
             </li>
           </ul>
+        </li>
+        <li class="nav-item">
+          <a href="{{ route('chatify') }}" class="nav-link">
+            <i class="fas fa-comment-alt nav-icon"></i>
+            <p>Pesan</p>
+          </a>
         </li>
 
         <!-- End Kurikulum 2013 -->

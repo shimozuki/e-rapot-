@@ -65,7 +65,12 @@
         <!-- End Kurikulum 2006 -->
 
         @endif
-
+        <li class="nav-item">
+          <a href="{{ route('chatify') }}" class="nav-link">
+            <i class="fas fa-comment-alt nav-icon"></i>
+            <p>Pesan</p>
+          </a>
+        </li>
         <li class="nav-item bg-danger mt-2">
           <a href="{{ route('logout') }}" class="nav-link" onclick="return confirm('Apakah anda yakin ingin keluar ?')">
             <i class="nav-icon fas fa-sign-out-alt"></i>
