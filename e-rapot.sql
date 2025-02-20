@@ -17,6 +17,11 @@
 SET NAMES utf8mb4;
 SET FOREIGN_KEY_CHECKS = 0;
 
+PUSHER_APP_ID=1945172
+PUSHER_APP_KEY=4c6dd41ba2aa2479f5f6
+PUSHER_APP_SECRET=20ff95702d0796e3f843
+PUSHER_APP_CLUSTER=ap1
+
 -- ----------------------------
 -- Table structure for admin
 -- ----------------------------
