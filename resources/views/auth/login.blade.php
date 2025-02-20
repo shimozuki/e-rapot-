@@ -29,13 +29,13 @@
               </div>
             </div>
           </div>
-          <div class="mb-3">
+          <!-- <div class="mb-3">
             <select class="form-control" name="kurikulum" style="width: 100%;">
               <option value="">-- Pilih Kurikulum Sekolah -- </option>
               <option value="2013">Kurikulum 2013 </option>
               <option value="2006">Kurikulum 2006 (KTSP) </option>
             </select>
-          </div>
+          </div> -->
           <div class="mb-1">
             <select class="form-control" name="tahun_pelajaran" style="width: 100%;">
               <option value="" disabled>-- Pilih Tahun Pelajaran -- </option>
