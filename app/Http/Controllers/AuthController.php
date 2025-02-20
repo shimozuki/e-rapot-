@@ -7,7 +7,7 @@ use App\Kelas;
 use App\RiwayatLogin;
 use App\Rules\MatchOldPassword;
 use App\Tapel;
-use App\User;
+use App\Models\User;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Http\Request;
@@ -71,7 +71,7 @@ class AuthController extends Controller
             if (!Auth::attempt(['username' => $request->username, 'password' => $request->password])) {
                 return back()->with('toast_error', 'password salah.');
             } elseif ($user_login->status == false) {
-                return back()->with('toast_error', 'User ' . $user_login->username . ' telah dinonaktifkan');
+                return back()->with('toast_error', 'User' . $user_login->username . ' telah dinonaktifkan');
             } else {
                 $cek_riwayat = RiwayatLogin::where('user_id', Auth::id())->first();
                 if (is_null($cek_riwayat)) {

@@ -10,7 +10,7 @@ use App\Kelas;
 use App\Siswa;
 use App\SiswaKeluar;
 use App\Tapel;
-use App\User;
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 use Excel;
@@ -78,6 +78,7 @@ class SiswaController extends Controller
                 $user = new User([
                     'username' => strtolower(str_replace(' ', '', $request->nama_lengkap . $request->nis)),
                     'password' => bcrypt('123456'),
+                    'name' => $request->nama_lengkap,
                     'role' => 3,
                     'status' => true
                 ]);

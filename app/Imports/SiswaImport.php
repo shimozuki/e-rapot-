@@ -3,7 +3,7 @@
 namespace App\Imports;
 
 use App\Siswa;
-use App\User;
+use App\Models\User;
 use Illuminate\Support\Collection;
 use Maatwebsite\Excel\Concerns\ToCollection;
 

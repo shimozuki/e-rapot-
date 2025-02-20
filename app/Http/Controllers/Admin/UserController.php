@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Admin;
 use App\Exports\UserExport;
 use App\Http\Controllers\Controller;
-use App\User;
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Validator;
@@ -48,6 +48,7 @@ class UserController extends Controller
             $user = new User([
                 'username' => strtolower(str_replace(' ', '', $request->nama_lengkap)),
                 'password' => bcrypt('123456'),
+                'name' => $request->nama_lengkap,
                 'role' => 1,
                 'status' => true
             ]);

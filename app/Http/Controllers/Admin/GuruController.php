@@ -6,7 +6,7 @@ use App\Exports\GuruExport;
 use App\Guru;
 use App\Http\Controllers\Controller;
 use App\Imports\GuruImport;
-use App\User;
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 use Excel;
@@ -52,6 +52,7 @@ class GuruController extends Controller
                 $user = new User([
                     'username' => strtolower(str_replace(' ', '', $request->nama_lengkap)),
                     'password' => bcrypt('123456'),
+                    'name' => $request->nama_lengkap,
                     'role' => 2,
                     'status' => true
                 ]);
