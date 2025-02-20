@@ -50,6 +50,10 @@
   text-align: center;
 }
 
+.identitas{
+    margin-bottom: 20px; /* Mengatur margin bawah sebesar 20 piksel */
+}
+
 .invoice-box table {
   width: 100%;
   line-height: inherit;
@@ -62,14 +66,12 @@
   border: 1px solid #333;
   font-weight: bold;
   text-align: center;
-  height: 25px;
 }
 
 /* Sikap */
 .invoice-box table tr.sikap td {
   border: 1px solid #333;
   padding: 6px;
-  height: 150px;
 }
 
 .invoice-box table tr.sikap td.predikat {
